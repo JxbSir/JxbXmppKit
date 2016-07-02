@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oK-8B-M73">
+                                <rect key="frame" x="25" y="193" width="192" height="33"/>
+                                <state key="normal" title="已断开，点击连接"/>
+                                <connections>
+                                    <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="be1-YZ-VhE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWD-qc-ESC">
+                                <rect key="frame" x="44" y="341" width="89" height="30"/>
+                                <state key="normal" title="发送 hi"/>
+                                <connections>
+                                    <action selector="btnSendAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lJ0-F2-jSo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jv1-BE-C0y">
+                                <rect key="frame" x="160" y="341" width="89" height="30"/>
+                                <state key="normal" title="发送震屏"/>
+                                <connections>
+                                    <action selector="btnShakeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fhJ-j7-EeX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRc-gP-BNR">
+                                <rect key="frame" x="160" y="297" width="89" height="30"/>
+                                <state key="normal" title="发送图片"/>
+                                <connections>
+                                    <action selector="btnImageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qCj-VB-q1f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Hz-Aa-vQf">
+                                <rect key="frame" x="270" y="297" width="89" height="30"/>
+                                <state key="normal" title="发送坐标"/>
+                                <connections>
+                                    <action selector="btnLocationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hpU-22-aMm"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WaV-g0-oBf">
+                                <rect key="frame" x="59" y="155" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eHe-hi-ZYf">
+                                <rect key="frame" x="59" y="244" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFV-t4-uja">
+                                <rect key="frame" x="44" y="297" width="89" height="30"/>
+                                <state key="normal" title="加好友"/>
+                                <connections>
+                                    <action selector="btnAddAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Hp-aQ-4Zm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wx-dl-bhK">
+                                <rect key="frame" x="270" y="341" width="89" height="30"/>
+                                <state key="normal" title="正在输入"/>
+                                <connections>
+                                    <action selector="btnInputingAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wdh-iJ-2yn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn" destination="4oK-8B-M73" id="2Dd-y6-C8S"/>
+                        <outlet property="txt1" destination="WaV-g0-oBf" id="peO-gc-PDf"/>
+                        <outlet property="txt2" destination="eHe-hi-ZYf" id="Zvh-Jq-Scc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="319"/>
+        </scene>
+    </scenes>
+</document>
